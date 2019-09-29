@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="warnapokok">#CF9609</color>
+    <color name="warnapokokgelap">#914D09</color>
+    <color name="warnaasent">#E00606</color>
+
+
+
+    <color name="putihtransparant">#80FFFFFF</color>
+    <color name="putih">#ecf0f1</color>
+    <color name="abuabu">#BDC3C7</color>
+    <color name="abuabu2">#333333</color>
+    <color name="abuabutua">#7f8c8d</color>
+    <color name="hitam">#2c3e50</color>
+    <color name="hitamtransparant">#852c3e50</color>
+
+
+    <color name="merah">#e74c3c</color>
+    <color name="merahtua">#c0392b</color>
+    <color name="kuning">#f1c40f</color>
+    <color name="kuningtua">#f39c12</color>
+    <color name="orange">#e67e22</color>
+    <color name="orangetua">#d35400</color>
+    <color name="hijau">#2ecc71</color>
+    <color name="hijautua">#27ae60</color>
+    <color name="ungu">#9b59b6</color>
+    <color name="ungutua">#8e44ad</color>
+    <color name="biru">#3498db</color>
+    <color name="birutua">#2980b9</color>
+    <color name="birutuabanget">#571C01</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#E74C3C</color>
+    <color name="dot_dark_screen2">#e74c3c</color>
+    <color name="dot_dark_screen3">#e74c3c</color>
+    <color name="dot_dark_screen4">#e74c3c</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#68150C</color>
+    <color name="dot_light_screen2">#68150C</color>
+    <color name="dot_light_screen3">#68150C</color>
+    <color name="dot_light_screen4">#68150C</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

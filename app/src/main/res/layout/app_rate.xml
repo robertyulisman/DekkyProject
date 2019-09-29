@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@color/biru">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iconratee"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:background="@drawable/ic_play"/>-->
+
+        <TextView
+            android:id="@+id/textsatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Our App"
+            android:layout_marginLeft="30dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/putih"
+            android:layout_marginTop="50dp"
+            />
+
+        <TextView
+            android:id="@+id/textdua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you Enjoy using Soy Luna App
+please take a few second to rate
+us 5 Stars in Google Play.
+it really help us"
+            android:layout_below="@+id/textsatu"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:textSize="16sp"
+            android:textColor="@color/putih"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_below="@+id/textdua"-->
+<!--            android:background="@drawable/ic_file_download_black_24dp"/>-->
+
+        <TextView
+            android:id="@+id/nothanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Thanks"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/putih"
+            android:textSize="16sp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:id="@+id/maybelater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Later"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/putih"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ratenow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Now"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/putih"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

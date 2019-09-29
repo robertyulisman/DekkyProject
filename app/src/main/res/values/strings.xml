@@ -1,0 +1,13 @@
+<resources>
+    <string name="name_App">Dekky Project</string>
+
+
+
+    <string name="admobAds">pub-3940256099942544</string>
+    <string name="admobidAds">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="bannerAds">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="intertialAds">ca-app-pub-3940256099942544/1033173712</string>
+
+
+
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context=".mp3player.JcPlayer">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/putih"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/warnapokok"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/warnapokok"
+        android:padding="10dp"
+        android:id="@+id/tulbar"
+        android:orientation="horizontal"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/btn_back"
+            android:tint="#000"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="30dp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/putih"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/btn_search"
+            android:layout_gravity="center"
+            android:tint="@color/birutuabanget"
+            android:src="@drawable/ic_search"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/warnaasent"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/search"
+        android:orientation="horizontal"
+        android:layout_height="?attr/actionBarSize">
+
+        <EditText
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:id="@+id/t_search"
+            android:layout_weight="1"
+
+            android:backgroundTint="#fff"
+            android:background="@drawable/square_border"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/btn_close"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_close_black_24dp"
+            android:tint="@color/birutuabanget"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/jcplayer"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_below="@+id/toolbar"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/garis3"
+        android:background="@color/birutuabanget"
+        android:gravity="bottom"
+        app:next_icon_color="@color/kuning"
+        app:pause_icon_color="@color/kuning"
+        app:play_icon_color="@color/kuning"
+        app:previous_icon_color="@color/kuning"
+        app:progress_color="@color/warnaasent"
+        app:random_icon_color="@android:color/white"
+        app:repeat_icon_color="@android:color/white"
+        app:seek_bar_color="@android:color/white"
+        app:text_audio_current_duration_color="@color/kuning"
+        app:text_audio_duration_color="@color/kuning"
+        app:text_audio_title_color="@android:color/white" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/garis3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/adView"
+        android:background="#dedede" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/bannerAds"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+
+
+</RelativeLayout>
